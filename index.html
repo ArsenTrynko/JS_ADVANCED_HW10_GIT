@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="set_block">
+        <form name="f1" novalidate>
+            <p>Login</p>
+            <input type="text" name="" id="login" required pattern="^[a-zA-Z]{1}[a-z]{0,15}$">
+            <p>Password</p>
+            <input type="password" name="" id="password" required pattern="^.{4,16}$">
+            <p>Email</p>
+            <input type="email" name="" id="email" required pattern="^[^@]+@[^@]+$">
+        </form>
+        <button type="button" id="add_user" class="btn">Add user</button>
+        <button type="button" id="edit_user" class="btn2">Edit user</button>
+    </div>
+    <div class="table_block">
+        <table>
+            <tbody  class="table">
+                <tr>
+                    <td>#</td>
+                    <td>Login</td>
+                    <td>Password</td>
+                    <td>Email</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="Jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
